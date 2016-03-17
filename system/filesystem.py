@@ -162,7 +162,13 @@ def main():
             'grow_flag' : 'filesystem resize',
             'force_flag' : '-f',
             'fsinfo': 'btrfs',
-        }
+        },
+        'swap' : {
+            'mkfs' : 'mkswap',
+            'grow' : 'mkswap',
+            'grow_flag' : 'None',
+            'force_flag' : '-f',
+         }
     }
 
     dev = module.params['dev']
